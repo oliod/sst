@@ -1,0 +1,119 @@
+---extract_my_profile
+	id_user
+	phd
+	last_name
+	first_name
+	e-mail
+	institution
+	sciences
+	title
+	mobile
+	birth_place
+	birth_date
+	thesis
+---address_residence	
+	street
+	box_num
+	postal_code
+	city
+	country
+	tel
+---contact_address	
+	univ
+	street
+	box_num
+	postal_code
+	city
+	country
+	tel
+	
+---extract_my_phd_admission
+	employment == type (Admission or Pre-admission) 
+	text
+	state
+	date
+	name_diploma
+---extract_my_phd_admission_research_project	
+	text == (Provisory title of the thesis)
+---extract_my_phd_admission_additional_programme
+	name_course == name1, name2, name3, name4, name5, total
+---extract_my_phd_admission_supervisory_panel
+	(3) Preadmission == l_name1, f_name1, inst1 ,type1; l_name2, f_name2, inst2 ,type2; l_name3, f_name3, inst3 ,type3; 
+	
+	(5) Admission == l_name4, f_name4, inst4 ,type4; 
+					l_name5, f_name5, inst5 ,type5; 
+					l_name6, f_name6, inst6 ,type6; 
+					l_name7, f_name7, inst7 ,type7;
+					l_name8, f_name8, inst8 ,type8;
+	
+---extract_my_phd_confirmation_submit
+	date_of_confirm 
+	select_confirm_state
+---extract_my_phd_confirmation_planning
+	[deadline][0...n]
+		deadline
+	[state][0...n]
+		status
+---extract_my_phd_private_defence_home		
+	thesis1
+	thesis2
+	date
+---extract_my_phd_private_defence_jury
+	role == type Member, Secretary, Supervisor, President
+	(1) president == l_name1, f_name1, inst1 ,type1; (+3+)
+	(1) secretary == l_name2, f_name2, inst2 ,type2; (+2+)
+	(3) supervisor == l_name3, f_name3, inst3 ,type3;  l_name4, f_name4, inst4 ,type4; l_name5, f_name5, inst5 ,type5; (+1+)
+	(6) members  == l_name6, f_name6, inst6 ,type6; 
+				l_name7, f_name7, inst7 ,type7; 
+				l_name8, f_name8, inst8 ,type8; 
+				l_name9, f_name9, inst9 ,type9;
+				l_name10, f_name10, inst10 ,type10;
+				l_name11, f_name11, inst11 ,type11; (+3+)
+---extract_my_phd_private_defence_status
+	state
+	date_passed
+---extract_my_phd_public_defence_home	
+	date
+	local
+	hour
+	thesis_place
+	time
+	details_place
+	details_thesis_num
+	details_money
+	details_check
+	details_hypertext
+	state
+---extract_my_doctoral_training	
+	submission == (1 , 2, 3 , 4 ... )
+	date
+		[status][validated] 
+		[status][submitted]
+		
+		[activities][training]
+		[activities][communication]
+		[activities][teaching]
+		[activities][other]
+		[activities][total]
+---extract_my_cotutelle
+	cotutelle == (YES , NO );
+	
+	// 142
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

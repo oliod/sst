@@ -1,0 +1,1 @@
+<?php if(file_exists('../../config/index.php') ) { include_once('../../config/index.php'); } ?>

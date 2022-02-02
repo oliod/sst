@@ -1,0 +1,117 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+
+a:hover{
+    text-decoration:none;
+}
+
+#upload .uphdr { 
+	background:#05435C; 
+	height:30px;
+	color:#fff; 
+	padding-top:7px; 
+	font-weight: bold;
+}
+
+#upload .uphdr span { 
+	margin:5px; padding:5px;
+}
+
+#upload{
+    background-color:#F0F0F0;
+    width: 500px;
+	padding: 20px;
+	border-radius: 5px;
+	margin: 50px auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);	 
+}
+
+#drop{
+    padding: 40px 50px;
+	margin: 10px;
+	border: 1px dashed green;
+	border-radius: 3px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: bold;
+	color: #7f858a;
+}
+
+#drop a{
+    background-color:#4e9760;
+    padding:12px 26px;
+    color:#fff;
+    font-size:14px;
+    border-radius:2px;
+    cursor:pointer;
+    display:inline-block;
+    margin-top:12px;
+    line-height:1;
+	box-shadow: 5px 5px 5px rgb(136, 136, 136);
+}
+
+#drop input{
+    display:none;
+}
+
+#upload ul{
+    list-style:none;
+    margin:0 -30px;
+}
+
+#upload ul li{
+    padding:5px;
+    height: 50px;
+    position: relative;
+}
+
+#upload ul li input{
+    display: none;
+}
+
+#upload ul li p{
+    overflow: hidden;
+    white-space: nowrap;
+    color: #EEE;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+}
+
+#upload ul li i{
+    font-weight: normal;
+    font-style:normal;
+    color:#7f7f7f;
+    display:block;
+}
+
+#upload ul li canvas{
+    top: 15px;
+    left: 32px;
+    position: absolute;
+}
+
+#upload ul li span{
+    width: 15px;
+    height: 12px;
+    background: url('../img/icons.png') no-repeat;
+    position: absolute;
+    top: 34px;
+    right: 33px;
+    cursor:pointer;
+}
+
+#upload ul li.working span{
+    height: 16px;
+    background-position: 0 -12px;
+}
+
+#upload ul li.error p{
+    color:red;
+}

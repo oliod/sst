@@ -1,0 +1,4 @@
+ALTER TABLE `registration` 
+ADD `timer_connected` VARCHAR(100) NULL AFTER `date_change`, 
+ADD `timer_deconnected` VARCHAR(100) NULL AFTER `timer_connected`, 
+ADD `connected` ENUM('0','1') NULL DEFAULT '0' AFTER `timer_deconnected`;
