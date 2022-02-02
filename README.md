@@ -1,4 +1,4 @@
-# sst
+# SST
 Before you engage in a PhD programme, you must assemble and submit an admission file using the ADMISSION area of the interface. Your application file requires the following points: 
 the required entry qualifications
 a supervisor who has agreed to oversee your work
